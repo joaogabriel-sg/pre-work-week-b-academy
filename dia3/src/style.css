@@ -1,8 +1,117 @@
-#app {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+  background: #6c5ce7;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-form {
+  background: #a29bfe;
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 16px;
+  border-radius: 4px;
+  margin-top: 16px;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.person-form label {
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.person-form input {
+  width: 100%;
+  height: 36px;
+
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  outline: none;
+
+  font-size: 16px;
+
+  transition: border-color 0.3s;
+}
+
+.person-form input:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.person-form input:focus {
+  border-color: #6c5ce7;
+}
+
+.person-form select {
+  width: 100%;
+  height: 140px;
+
+  border-radius: 4px;
+  border: 2px solid transparent;
+  outline: none;
+
+  transition: border-color;
+}
+
+.person-form select:focus {
+  border-color: #6c5ce7;
+}
+
+.person-form select option {
+  padding: 10px;
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  color: #191919;
+}
+
+.person-form select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.person-form select::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.person-form select::-webkit-scrollbar-thumb {
+  background: #6c5ce7;
+  border-radius: 4px;
+}
+
+.person-form .selected-color-container {
+  width: 100%;
+  margin-top: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.person-form .selected-color-container div {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
