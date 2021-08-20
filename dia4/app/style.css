@@ -109,22 +109,31 @@ body {
 .table-container {
   background: #ececec;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1280px;
   padding: 24px 24px;
   border-radius: 4px;
   margin: 48px auto;
 }
 
 .table-container h2 {
-  margin-bottom: 16px;
   text-align: start;
   color: #191919;
+}
+
+.table-container span {
+  display: block;
+  margin-top: 4px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: #e74c3c;
 }
 
 .car-table {
   width: 100%;
 
-  margin: 0 auto;
+  margin: 12px auto 0;
   border-collapse: collapse;
 }
 
@@ -154,8 +163,23 @@ body {
 
 .car-table tbody tr td {
   padding: 8px 4px;
-
   font-size: 18px;
+}
+
+.car-table tbody tr td button {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 4px;
+  border: 2px solid transparent;
+
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.car-table tbody tr td button:hover {
+  border-color: #e74c3c;
 }
 
 .car-table tbody tr:last-child td:first-child {
