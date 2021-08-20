@@ -1,6 +1,6 @@
 # Desafio do dia 04
 
-Para esse desafio, você vai encontrar dois diretórios: `app` (frontend, onde 
+Para esse desafio, você vai encontrar dois diretórios: `app` (frontend, onde
 você vai trabalhar) e `server`, que é o servidor que você irá precisar para os
 exercícios desse desafio.
 
@@ -13,7 +13,7 @@ dependências, e então `yarn start` para subir o servidor.
 
 O servidor vai ficar ouvindo as requisições na porta `3333` do seu `localhost`.
 
-Esse é o mesmo servidor que você me viu rodando na aula 4: é uma API para CRUD 
+Esse é o mesmo servidor que você me viu rodando na aula 4: é uma API para CRUD
 de carros.
 
 Para quem não conhece o termo, CRUD significa _Create, Read, Update and Delete_,
@@ -40,7 +40,7 @@ formulário e a tabela do exercício anterior para o arquivo `index.html`.
 
 Logo que o frontend carregar, deverá ser feito um request para o servidor para
 buscar todos os carros que foram cadastrados. Lembre-se que, para **obter** informações,
-usamos o método `GET`. 
+usamos o método `GET`.
 
 Como resultado da requisição, você irá receber um array com todos os carros cadastrados.
 Se não houverem carros cadastrados, o resultado será um array vazio.
@@ -70,7 +70,7 @@ deve ser removida, e as informações do carro devem ser exibidas na tabela.
 Para todos os outros carros cadastrados, você deverá ir adicionando-os à tabela
 um abaixo do outro **se o request de cadastro retornar uma mensagem de sucesso**.
 
-O campo `plate` deve ser único para cada carro, então, se você tentar cadastrar 
+O campo `plate` deve ser único para cada carro, então, se você tentar cadastrar
 um carro com uma placa que já foi cadastrada anteriormente, você obterá um erro.
 
 O erro será recebido com status code `400`, no seguinte formato:
@@ -86,7 +86,7 @@ Exiba a mensagem de erro na tela, quando isso acontecer. Fique à vontade para e
 como a mensagem de erro será exibida para o usuário, só **não use** o `alert` padrão
 do navegador.
 
-Todos os campos são obrigatórios, então um outro possível erro vai acontecer 
+Todos os campos são obrigatórios, então um outro possível erro vai acontecer
 quando você tentar enviar algum campo vazio.
 
 ## Exercício 4

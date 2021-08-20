@@ -12,6 +12,8 @@ body {
 
   background: #6c5ce7;
   min-height: 100vh;
+  padding: 0 8px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,6 +94,16 @@ body {
 .form button:hover {
   background: #6c5ce7;
   color: #ececec;
+}
+
+.form span:last-child {
+  width: 100%;
+  margin-top: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #e74c3c;
 }
 
 .table-container {
